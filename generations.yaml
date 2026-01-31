@@ -1,0 +1,47 @@
+references:
+  - "https://en.wikipedia.org/wiki/Toyota_Matrix"
+
+generations:
+  - name: "First Generation"
+    start_year: 2003
+    end_year: 2005
+    platform: "Toyota MC platform (E130)"
+    description: "First generation Toyota Matrix, introduced as a 2003 model year vehicle. Based on the Toyota Corolla platform with compact hatchback body style. Featured 1ZZ-FE and 2ZZ-GE I4 engine options. Relatively unchanged from 2003 to 2004."
+    notes:
+      - "Introduced February 2002, sold as 2003-2008 model years"
+      - "Facelift in 2005 brought revised front fascia, clear taillamps, and redesigned center instrument panel"
+      - "Available in Standard, XR, and XRS trim levels"
+      - "AWD available from 2003-2006 with automatic transmission"
+
+  - name: "First Generation"
+    start_year: 2006
+    end_year: 2008
+    platform: "Toyota MC platform (E130)"
+    description: "Facelifted first generation Matrix with updated styling and features. The 2ZZ-GE engine was discontinued after 2006, ending the XRS trim line. Replaced by limited M-Theory edition in 2007."
+    notes:
+      - "Post-facelift production with updated styling and features"
+      - "2006 power reduction due to new testing standards, not actual engine change"
+      - "M-Theory edition (2007) was a limited appearance package with 2,500 units produced"
+      - "AWD discontinued after 2006"
+
+  - name: "Second Generation"
+    start_year: 2009
+    end_year: 2010
+    platform: "Toyota New MC platform (E140)"
+    description: "Completely redesigned second generation Matrix unveiled at SEMA show on October 31, 2007. Built on the new E140 platform with updated Corolla-based architecture. Featured new 2ZR-FE and 2AZ-FE I4 engines."
+    notes:
+      - "New platform with independent rear suspension on XRS and AWD models"
+      - "Reduced interior space compared to first generation"
+      - "Available in Standard, S (US), and XRS trim levels"
+      - "AWD available with 2.4L engine in S trim"
+
+  - name: "Second Generation"
+    start_year: 2011
+    end_year: 2014
+    platform: "Toyota New MC platform (E140)"
+    description: "Updated second generation Matrix with redesigned exterior and interior elements for 2011 model year. Added Bluetooth capability, new fascias, wheels, and seat fabrics. XRS trim discontinued in US after 2010."
+    notes:
+      - "2011 refresh included redesigned front and rear fascias"
+      - "Vehicle Stability Control and traction control became standard for 2010"
+      - "Toyota's Smart Stop Technology added for 2011"
+      - "Discontinued in US after 2013 model year, Canada after 2014"
