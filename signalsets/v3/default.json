@@ -815,24 +815,22 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "01"}, "freq": 1, "dbgfilter": { "to": 2007, "years": [2009], "from": 2011 },
   "signals": [
-    {"id": "MATRIX_CALCULATED_LOAD_7E0",      "path": "Engine",   "fmt": {            "len": 8,  "max": 100,                  "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Calculated load_7e0"},
-    {"id": "MATRIX_VEHICLE_LOAD",             "path": "Engine",   "fmt": {"bix": 8,   "len": 16, "max": 100,                  "mul": 100, "div": 65535,             "unit": "percent"           }, "name": "Vehicle load"},
-    {"id": "MATRIX_MAF",                      "path": "Engine",   "fmt": {"bix": 24,  "len": 16, "max": 655.35,                           "div": 100,               "unit": "gramsPerSecond"    }, "name": "Mass air flow",                "suggestedMetric": "massAirFlow"},
-    {"id": "MATRIX_MAP",                      "path": "Engine",   "fmt": {"bix": 40,  "len": 8,  "max": 255,                                                        "unit": "kilopascal"        }, "name": "Manifold absolute pressure"},
-    {"id": "MATRIX_ATMOSPHERE_PRESSURE",      "path": "Engine",   "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                        "unit": "kilopascal"        }, "name": "Atmosphere pressure"},
-    {"id": "MATRIX_COOLANT_TEMP",             "path": "Engine",   "fmt": {"bix": 56,  "len": 8,  "max": 215,      "min": -40,                           "add": -40, "unit": "celsius"           }, "name": "Coolant temp"},
-    {"id": "MATRIX_ENGINE_SPEED",             "path": "Movement", "fmt": {"bix": 64,  "len": 16, "max": 16383.75,                         "div": 4,                 "unit": "rpm"               }, "name": "Engine speed"},
-    {"id": "MATRIX_VEHICLE_SPEED",            "path": "Movement", "fmt": {"bix": 80,  "len": 8,  "max": 255,                                                        "unit": "kilometersPerHour" }, "name": "Vehicle speed",                "suggestedMetric": "speed"},
-    {"id": "MATRIX_ENGINE_RUN_TIME",          "path": "Engine",   "fmt": {"bix": 88,  "len": 16, "max": 65535,                                                      "unit": "seconds"           }, "name": "Engine run time"},
-    {"id": "MATRIX_THROTTLE_SENSOR_POSITION", "path": "Engine",   "fmt": {"bix": 104, "len": 8,  "max": 100,                  "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Throttle sensor position"},
-    {"id": "MATRIX_THROTTLE_SENSOR_VOLT",     "path": "Engine",   "fmt": {"bix": 112, "len": 8,  "max": 100,                  "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Throttle sensor volt %, 1"},
-    {"id": "MATRIX_THROTTL_SENSOR_2_VOLT",    "path": "Engine",   "fmt": {"bix": 120, "len": 8,  "max": 100,                  "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Throttle sensor volt %, 2"},
-    {"id": "MATRIX_ACCEL_SENS_NO_1_VOLT",     "path": "Engine",   "fmt": {"bix": 128, "len": 8,  "max": 100,                  "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Accelerator sensor volt %, 1"},
-    {"id": "MATRIX_ACCEL_SENS_NO_2_VOLT",     "path": "Engine",   "fmt": {"bix": 136, "len": 8,  "max": 100,                  "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Accelerator sensor volt %, 2"},
-    {"id": "MATRIX_THROTTLE_MOTOR_DUTY",      "path": "Engine",   "fmt": {"bix": 144, "len": 8,  "max": 100,                  "mul": 100, "div": 255,               "unit": "percent"           }, "name": "Throttle motor DUTY"},
-    {"id": "MATRIX_WARMUP_CYCLE_CLEARED_DTC", "path": "Engine",   "fmt": {"bix": 160, "len": 8,  "max": 255,                                                        "unit": "scalar"            }, "name": "Warm-up cycle cleared DTC"},
-    {"id": "MATRIX_TIME_AFTER_DTC_CLEARED",   "path": "Engine",   "fmt": {"bix": 176, "len": 16, "max": 65535,                                                      "unit": "minutes"           }, "name": "Time after DTC cleared"},
-    {"id": "MATRIX_BATTERY_VOLTAGE_7E0",      "path": "Battery",  "fmt": {"bix": 192, "len": 16, "max": 65.535,                           "div": 1000,              "unit": "volts"             }, "name": "Battery voltage"}
+    {"id": "MATRIX_MAF",                      "path": "Engine",   "fmt": {"bix": 24,  "len": 16, "max": 655.35,                           "div": 100,              "unit": "gramsPerSecond"    }, "name": "Mass air flow",                "suggestedMetric": "massAirFlow"},
+    {"id": "MATRIX_MAP",                      "path": "Engine",   "fmt": {"bix": 40,  "len": 8,  "max": 255,                                                       "unit": "kilopascal"        }, "name": "Manifold absolute pressure"},
+    {"id": "MATRIX_ATMOSPHERE_PRESSURE",      "path": "Engine",   "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                       "unit": "kilopascal"        }, "name": "Atmosphere pressure"},
+    {"id": "MATRIX_COOLANT_TEMP",             "path": "Engine",   "fmt": {"bix": 56,  "len": 8,  "max": 215,      "min": -40,                          "add": -40, "unit": "celsius"           }, "name": "Coolant temp"},
+    {"id": "MATRIX_ENGINE_SPEED",             "path": "Movement", "fmt": {"bix": 64,  "len": 16, "max": 16383.75,                         "div": 4,                "unit": "rpm"               }, "name": "Engine speed"},
+    {"id": "MATRIX_VEHICLE_SPEED",            "path": "Movement", "fmt": {"bix": 80,  "len": 8,  "max": 255,                                                       "unit": "kilometersPerHour" }, "name": "Vehicle speed",                "suggestedMetric": "speed"},
+    {"id": "MATRIX_ENGINE_RUN_TIME",          "path": "Engine",   "fmt": {"bix": 88,  "len": 16, "max": 65535,                                                     "unit": "seconds"           }, "name": "Engine run time"},
+    {"id": "MATRIX_THROTTLE_SENSOR_POSITION", "path": "Engine",   "fmt": {"bix": 104, "len": 8,  "max": 100,                  "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Throttle sensor position"},
+    {"id": "MATRIX_THROTTLE_SENSOR_VOLT",     "path": "Engine",   "fmt": {"bix": 112, "len": 8,  "max": 100,                  "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Throttle sensor volt %, 1"},
+    {"id": "MATRIX_THROTTL_SENSOR_2_VOLT",    "path": "Engine",   "fmt": {"bix": 120, "len": 8,  "max": 100,                  "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Throttle sensor volt %, 2"},
+    {"id": "MATRIX_ACCEL_SENS_NO_1_VOLT",     "path": "Engine",   "fmt": {"bix": 128, "len": 8,  "max": 100,                  "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Accelerator sensor volt %, 1"},
+    {"id": "MATRIX_ACCEL_SENS_NO_2_VOLT",     "path": "Engine",   "fmt": {"bix": 136, "len": 8,  "max": 100,                  "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Accelerator sensor volt %, 2"},
+    {"id": "MATRIX_THROTTLE_MOTOR_DUTY",      "path": "Engine",   "fmt": {"bix": 144, "len": 8,  "max": 100,                  "mul": 100, "div": 255,              "unit": "percent"           }, "name": "Throttle motor DUTY"},
+    {"id": "MATRIX_WARMUP_CYCLE_CLEARED_DTC", "path": "Engine",   "fmt": {"bix": 160, "len": 8,  "max": 255,                                                       "unit": "scalar"            }, "name": "Warm-up cycle cleared DTC"},
+    {"id": "MATRIX_TIME_AFTER_DTC_CLEARED",   "path": "Engine",   "fmt": {"bix": 176, "len": 16, "max": 65535,                                                     "unit": "minutes"           }, "name": "Time after DTC cleared"},
+    {"id": "MATRIX_BATTERY_VOLTAGE_7E0",      "path": "Battery",  "fmt": {"bix": 192, "len": 16, "max": 65.535,                           "div": 1000,             "unit": "volts"             }, "name": "Battery voltage"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "03"}, "freq": 1, "dbgfilter": { "to": 2007, "from": 2009 },
   "signals": [
@@ -856,8 +854,6 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "06"}, "freq": 1, "dbgfilter": { "to": 2007, "from": 2009 },
   "signals": [
-    {"id": "MATRIX_MIL",                            "path": "DTCs", "fmt": {           "len": 1,  "max": 1,     "unit": "offon"      }, "name": "MIL"},
-    {"id": "MATRIX_NUMBER_OF_EMISSION_DTC",         "path": "DTCs", "fmt": {"bix": 1,  "len": 7,  "max": 127,   "unit": "scalar"     }, "name": "Number of emission DTC"},
     {"id": "MATRIX_COMPLETE_PARTS_MONITOR_AVAIL",   "path": "DTCs", "fmt": {"bix": 13, "len": 1,  "max": 1,     "unit": "offon"      }, "name": "Complete parts monitor_avail"},
     {"id": "MATRIX_FUEL_SYSTEM_MONITOR_AVAIL",      "path": "DTCs", "fmt": {"bix": 14, "len": 1,  "max": 1,     "unit": "offon"      }, "name": "Fuel system monitor_avail"},
     {"id": "MATRIX_MISFIRE_MONITOR_AVAIL",          "path": "DTCs", "fmt": {"bix": 15, "len": 1,  "max": 1,     "unit": "offon"      }, "name": "Misfire monitor_avail"},
@@ -911,13 +907,6 @@
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "21"}, "freq": 5, "filter": { "to": 2018 }, "dbgfilter": { "to": 2007, "years": [2009], "from": 2011 },
   "signals": [
     {"id": "MATRIX_CC_S", "path": "Cruise control", "fmt": {"bix": 8, "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Cruise control speed"}
-  ]},
-{ "hdr": "7E0", "rax": "7E8", "cmd": {"21": "24"}, "freq": 1, "dbgfilter": { "to": 2007, "from": 2009 },
-  "signals": [
-    {"id": "MATRIX_COMMUNICATION_WITH_HV",     "path": "Climate", "fmt": {"bix": 2, "len": 1, "max": 1, "unit": "offon"  }, "name": "Communication with HV"},
-    {"id": "MATRIX_COMMUNICATION_WITH_BRAKE",  "path": "Control", "fmt": {"bix": 4, "len": 1, "max": 1, "unit": "offon"  }, "name": "Communication with brake"},
-    {"id": "MATRIX_COMM_WITH_AIR_CONDITIONER", "path": "Climate", "fmt": {"bix": 5, "len": 1, "max": 1, "unit": "offon"  }, "name": "Communication with air conditioner"},
-    {"id": "MATRIX_COMM_WITH_VALVEMATIC_COMM", "path": "Climate", "fmt": {"bix": 6, "len": 1, "max": 1, "unit": "scalar" }, "name": "Communication with valvematic"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "25"}, "freq": 1, "dbgfilter": { "to": 2009, "from": 2011 },
   "signals": [
