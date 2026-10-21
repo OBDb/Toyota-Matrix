@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.2185
+test_cases:
+- expected_values:
+    MATRIX_GEAR: 1
+    MATRIX_GEAR_LOCKUP: 0
+  response: '7E806618501001000'
+- expected_values:
+    MATRIX_GEAR: 2
+    MATRIX_GEAR_LOCKUP: 0
+  response: '7E806618502001000'
+- expected_values:
+    MATRIX_GEAR: 3
+    MATRIX_GEAR_LOCKUP: 0
+  response: '7E806618503001000'

@@ -1,0 +1,8 @@
+command_id: 7C4.7CC.2153
+test_cases:
+- expected_values:
+    MATRIX_REGULATOR_P: 308.24
+  response: 7CC03615334
+- expected_values:
+    MATRIX_REGULATOR_P: 558.31
+  response: 7CC03615345

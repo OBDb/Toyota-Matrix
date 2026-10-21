@@ -1,0 +1,14 @@
+command_id: 7E0.7E8.2182
+test_cases:
+- expected_values:
+    MATRIX_ATF_PAN_T: 25.625
+  response: 7E804618241A0
+- expected_values:
+    MATRIX_ATF_PAN_T: 26.875
+  response: 7E804618242E0
+- expected_values:
+    MATRIX_ATF_PAN_T: 30
+  response: '7E80461824600'
+- expected_values:
+    MATRIX_ATF_PAN_T: 39.375
+  response: 7E80461824F60

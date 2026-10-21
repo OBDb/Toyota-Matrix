@@ -1,0 +1,20 @@
+command_id: 7B0.7B8.2121
+test_cases:
+- expected_values:
+    MATRIX_VEHICLE_SPEED_7B0: 0
+  response: 7B803612100
+- expected_values:
+    MATRIX_VEHICLE_SPEED_7B0: 2.56
+  response: 7B803612102
+- expected_values:
+    MATRIX_VEHICLE_SPEED_7B0: 12.8
+  response: 7B80361210A
+- expected_values:
+    MATRIX_VEHICLE_SPEED_7B0: 21.76
+  response: 7B803612111
+- expected_values:
+    MATRIX_VEHICLE_SPEED_7B0: 28.16
+  response: 7B803612116
+- expected_values:
+    MATRIX_VEHICLE_SPEED_7B0: 32
+  response: 7B803612119
