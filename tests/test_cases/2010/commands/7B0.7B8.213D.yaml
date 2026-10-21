@@ -1,0 +1,9 @@
+command_id: 7B0.7B8.213D
+test_cases:
+- expected_values:
+    MATRIX_ABS_WARN: 0
+    MATRIX_BRAKE_WARN: 0
+    MATRIX_BUZZER: 0
+    MATRIX_ECB_WARN: 0
+    MATRIX_SLIP_WARN: 0
+  response: 7B803613D00

@@ -1,0 +1,5 @@
+command_id: 7C0.7C8.2112
+test_cases:
+- expected_values:
+    MATRIX_TAIL_CANCEL_LIGHT: 1
+  response: 7C803611221

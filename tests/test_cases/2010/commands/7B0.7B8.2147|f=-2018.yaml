@@ -1,0 +1,56 @@
+command_id: 7B0.7B8.2147|f=-2018
+test_cases:
+- expected_values:
+    MATRIX_LAT_G: 0
+    MATRIX_LNG_G: -0.06
+    MATRIX_STEER_ANGLE: 519
+    MATRIX_YAW_RATE: 0
+  response: 7B807614700FD809446
+- expected_values:
+    MATRIX_LAT_G: 0.02
+    MATRIX_LNG_G: 0
+    MATRIX_STEER_ANGLE: 441
+    MATRIX_YAW_RATE: 0
+  response: 7B8076147010080913A
+- expected_values:
+    MATRIX_LAT_G: 0.02
+    MATRIX_LNG_G: -0.04
+    MATRIX_STEER_ANGLE: 379.5
+    MATRIX_YAW_RATE: 0
+  response: 7B807614701FE808ED3
+- expected_values:
+    MATRIX_LAT_G: 0.02
+    MATRIX_LNG_G: -0.02
+    MATRIX_STEER_ANGLE: 534
+    MATRIX_YAW_RATE: 0
+  response: 7B807614701FF8094DC
+- expected_values:
+    MATRIX_LAT_G: 0.04
+    MATRIX_LNG_G: 0.04
+    MATRIX_STEER_ANGLE: 517.4
+    MATRIX_YAW_RATE: 11
+  response: 7B807614702028B9436
+- expected_values:
+    MATRIX_LAT_G: 0.1
+    MATRIX_LNG_G: 0
+    MATRIX_STEER_ANGLE: 1.5
+    MATRIX_YAW_RATE: 0
+  response: 7B8076147050080800F
+- expected_values:
+    MATRIX_LAT_G: 0.12
+    MATRIX_LNG_G: 0.12
+    MATRIX_STEER_ANGLE: 66.5
+    MATRIX_YAW_RATE: 5
+  response: 7B80761470606858299
+- expected_values:
+    MATRIX_LAT_G: 0.16
+    MATRIX_LNG_G: 0.1
+    MATRIX_STEER_ANGLE: 48.3
+    MATRIX_YAW_RATE: 6
+  response: 7B807614708058681E3
+- expected_values:
+    MATRIX_LAT_G: -0.24
+    MATRIX_LNG_G: 0.08
+    MATRIX_STEER_ANGLE: -219
+    MATRIX_YAW_RATE: -26
+  response: 7B8076147F404667772

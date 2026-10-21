@@ -1,0 +1,26 @@
+command_id: 7C0.7C8.2129|f=-2018
+test_cases:
+- expected_values:
+    MATRIX_FLI_VOL: 17.5
+  response: 7C803612923
+- expected_values:
+    MATRIX_FLI_VOL: 19
+  response: 7C803612926
+- expected_values:
+    MATRIX_FLI_VOL: 21.5
+  response: 7C80361292B
+- expected_values:
+    MATRIX_FLI_VOL: 22
+  response: 7C80361292C
+- expected_values:
+    MATRIX_FLI_VOL: 23
+  response: 7C80361292E
+- expected_values:
+    MATRIX_FLI_VOL: 23.5
+  response: 7C80361292F
+- expected_values:
+    MATRIX_FLI_VOL: 24
+  response: 7C803612930
+- expected_values:
+    MATRIX_FLI_VOL: 24.5
+  response: 7C803612931
