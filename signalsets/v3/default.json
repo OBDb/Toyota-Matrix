@@ -299,7 +299,7 @@
   ]},
 { "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1621"}, "freq": 1,
   "signals": [
-    {"id": "MATRIX_GEAR_700", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear"}
+    {"id": "MATRIX_GEAR_700", "path": "Transmission", "fmt": { "len": 8, "max": 255, "unit": "scalar" }, "name": "Gear", "suggestedMetric": "gear"}
   ]},
 { "hdr": "700", "rax": "708", "dbg": true, "cmd": {"22": "1622"}, "freq": 1,
   "signals": [
@@ -571,8 +571,8 @@
   ]},
 { "hdr": "7B0", "rax": "7B8", "cmd": {"21": "47"}, "freq": 0.25, "filter": { "to": 2018 }, "dbgfilter": { "to": 2009, "from": 2011 },
   "signals": [
-    {"id": "MATRIX_LAT_G",       "path": "Orientation", "fmt": {           "len": 8,  "max": 2.5,    "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Lateral g"},
-    {"id": "MATRIX_LNG_G",       "path": "Orientation", "fmt": {"bix": 8,  "len": 8,  "max": 2.5,    "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Longitudinal g"},
+    {"id": "MATRIX_LAT_G",       "path": "Orientation", "fmt": {           "len": 8,  "max": 2.5,    "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Lateral g",            "suggestedMetric": "lateralAcceleration"},
+    {"id": "MATRIX_LNG_G",       "path": "Orientation", "fmt": {"bix": 8,  "len": 8,  "max": 2.5,    "min": -2.5,  "div": 50,                 "sign": true, "unit": "gravity" }, "name": "Longitudinal g",       "suggestedMetric": "longitudinalAcceleration"},
     {"id": "MATRIX_YAW_RATE",    "path": "Orientation", "fmt": {"bix": 16, "len": 8,  "max": 127,    "min": -128,             "add": -128,                  "unit": "degrees" }, "name": "Yaw rate value"},
     {"id": "MATRIX_STEER_ANGLE", "path": "Control",     "fmt": {"bix": 24, "len": 16, "max": 3276.7, "min": -3276, "div": 10, "add": -3276.8,               "unit": "degrees" }, "name": "Steering wheel angle"}
   ]},
@@ -816,7 +816,7 @@
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "01"}, "freq": 1, "dbgfilter": { "to": 2007, "years": [2009], "from": 2011 },
   "signals": [
     {"id": "MATRIX_MAF",                      "path": "Engine",   "fmt": {"bix": 24,  "len": 16, "max": 655.35,                           "div": 100,              "unit": "gramsPerSecond"    }, "name": "Mass air flow",                "suggestedMetric": "massAirFlow"},
-    {"id": "MATRIX_MAP",                      "path": "Engine",   "fmt": {"bix": 40,  "len": 8,  "max": 255,                                                       "unit": "kilopascal"        }, "name": "Manifold absolute pressure"},
+    {"id": "MATRIX_MAP",                      "path": "Engine",   "fmt": {"bix": 40,  "len": 8,  "max": 255,                                                       "unit": "kilopascal"        }, "name": "Manifold absolute pressure",   "suggestedMetric": "absoluteBoostPressure"},
     {"id": "MATRIX_ATMOSPHERE_PRESSURE",      "path": "Engine",   "fmt": {"bix": 48,  "len": 8,  "max": 255,                                                       "unit": "kilopascal"        }, "name": "Atmosphere pressure"},
     {"id": "MATRIX_COOLANT_TEMP",             "path": "Engine",   "fmt": {"bix": 56,  "len": 8,  "max": 215,      "min": -40,                          "add": -40, "unit": "celsius"           }, "name": "Coolant temp"},
     {"id": "MATRIX_ENGINE_SPEED",             "path": "Movement", "fmt": {"bix": 64,  "len": 16, "max": 16383.75,                         "div": 4,                "unit": "rpm"               }, "name": "Engine speed"},
@@ -890,7 +890,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0F"}, "freq": 1,
   "signals": [
-    {"id": "MATRIX_IAT_21", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature"}
+    {"id": "MATRIX_IAT_21", "path": "Engine", "fmt": { "len": 8, "max": 215, "min": -40, "add": -40, "unit": "celsius" }, "name": "Intake air temperature", "suggestedMetric": "intakeAirTemperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "10"}, "freq": 1,
   "signals": [
@@ -1097,7 +1097,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "cmd": {"21": "85"}, "freq": 0.5, "dbgfilter": { "to": 2009, "from": 2011 },
   "signals": [
-    {"id": "MATRIX_GEAR",        "path": "Transmission", "fmt": {          "len": 8, "max": 20, "unit": "scalar" }, "name": "Gear"},
+    {"id": "MATRIX_GEAR",        "path": "Transmission", "fmt": {          "len": 8, "max": 20, "unit": "scalar" }, "name": "Gear",         "suggestedMetric": "gear"},
     {"id": "MATRIX_GEAR_LOCKUP", "path": "Transmission", "fmt": {"bix": 8, "len": 1, "max": 1,  "unit": "offon"  }, "name": "Gear lock-up", "description": "Mechanism within the automatic transmission that momentarily locks the gears during gear changes, providing a smoother and more efficient transition between different gears, especially when accelerating or decelerating; essentially helps minimize power loss and jerkiness during gear shifts."}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "B2"}, "freq": 1,
@@ -1121,7 +1121,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "D3"}, "freq": 0.25,
   "signals": [
-    {"id": "MATRIX_CRUISE_CTRL_SPD", "path": "Movement", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Cruise control speed"},
+    {"id": "MATRIX_CRUISE_CTRL_SPD", "path": "Movement", "fmt": {"bix": 8,  "len": 8, "max": 255, "unit": "kilometersPerHour" }, "name": "Cruise control speed", "suggestedMetric": "cruiseSetSpeed"},
     {"id": "MATRIX_CRUISE_CTRL_ON",  "path": "Engine",   "fmt": {"bix": 25, "len": 1, "max": 1,   "unit": "offon"             }, "name": "Cruise control on"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "D9"}, "freq": 5,
